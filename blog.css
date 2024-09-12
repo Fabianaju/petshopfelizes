@@ -1,0 +1,276 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilos do Header */
+header {
+    background-color: #ffb74d;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    max-width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Navegação */
+.nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #333;
+}
+
+.nav-links i {
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover i {
+    color: #333;
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.search-bar input:focus {
+    transform: scale(1.05);
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #e64a19;
+}
+
+/* Estilos do Main */
+main {
+    padding: 40px 20px;
+}
+
+.blog-header {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.blog-header h1 {
+    font-size: 2.5em;
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+.blog-header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Estilos dos Posts */
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 2px solid #388e3c;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.post h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #2c6b2f;
+}
+
+.post p {
+    font-size: 1em;
+    color: #555;
+}
+
+.post a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #388e3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post a:hover {
+    color: #2c6b2f;
+}
+
+.post:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos do Footer */
+footer {
+    background-color: #ffb74d;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #333;
+}
+
+/* Menu Hambúrguer */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    z-index: 11; 
+}
+
+.menu-toggle i {
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Menu Colapsável */
+@media (max-width: 768px) {
+    .nav {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffb74d;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 10; 
+    }
+
+    .nav.active {
+        display: flex; 
+    }
+
+    .nav-links {
+        display: flex; 
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+}
+
+/* Menu Principal */
+@media (min-width: 769px) {
+    .nav {
+        display: flex; 
+    }
+
+    .menu-toggle {
+        display: none; 
+    }
+}
+
+

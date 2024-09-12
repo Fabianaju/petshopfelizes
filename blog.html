@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog - Pet Shop Felizes</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo-petshop.png" alt="Logo Pet Shop Felizes">
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-blog"></i> Home</a></li>
+                    <li><a href="#sobre"><i class="fas fa-info-circle"></i> sobre</a></li>
+                    <li><a href="#produtos"><i class="fas fa-paw"></i> Notícias</a></li>
+                    <li><a href="#servicos"><i class="fas fa-concierge-bell"></i> Serviços</a></li>
+                    <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-header">
+            <h1>Blog do Pet Shop Felizes</h1>
+            <p>Fique por dentro das novidades, dicas e histórias do mundo pet!</p>
+        </section>
+
+        <section class="blog-posts">
+            <div class="post">
+                <img src="assets/post1.png" alt="Post 1">
+                <h2>Cuidados Essenciais com seu Pet</h2>
+                <p>Descubra os cuidados essenciais para garantir a saúde e o bem-estar do seu amigo de quatro patas. Dicas práticas e informações valiosas para manter seu pet feliz e saudável.</p>
+                <a href="#">Leia mais</a>
+            </div>
+            <div class="post">
+                <img src="assets/post2.png" alt="Post 2">
+                <h2>Alimentação Adequada para Pets</h2>
+                <p>Entenda a importância de uma alimentação balanceada para seu pet. Saiba quais alimentos são mais adequados e como escolher a melhor ração para cada fase da vida do seu animal.</p>
+                <a href="#">Leia mais</a>
+            </div>
+            <div class="post">
+                <img src="assets/post3.png" alt="Post 3">
+                <h2>Brincadeiras e Atividades para Pets</h2>
+                <p>Explore diversas brincadeiras e atividades que ajudarão a manter seu pet ativo e entretido. Aprenda a criar momentos de diversão e interação com seu amigo peludo.</p>
+                <a href="#">Leia mais</a>
+            </div>
+            <!-- Adicione mais posts conforme necessário -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pet Shop Felizes. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+   <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
